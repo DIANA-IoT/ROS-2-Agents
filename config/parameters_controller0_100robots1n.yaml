@@ -1,0 +1,21 @@
+controller0:
+  RobotController:
+      ros__parameters:
+          max_vel: 0.5
+          laser_min_range: 0.12
+          laser_max_range: 3.5
+          forces:
+              repulsion_sigma_robot: 2000000000.0
+              repulsion_n_robot: 7.0
+              repulsion_sigma_object: 2000.0
+              repulsion_n_object: 8.0
+              cohesion_sigma: 0.5
+              cohesion_n: -0.5
+          topic_update_seconds: 5
+          force_update_ms: 500
+          _movement_threshold: 1.0
+          controller_index: 0
+          robots_to_control: 100
+          total_robots: 100
+
+

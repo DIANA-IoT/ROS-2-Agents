@@ -1,0 +1,43 @@
+include "map.inc"
+include "spiderv4.inc"
+
+# size of the whole simulation
+# resolution 0.02
+
+# configure the GUI window	
+window
+(
+	size [ 1200.0 1200.0 ]
+	scale 10  
+  	rotate [ 0  0 ]	
+	center [ 0 0 ]
+	show_data 1              # 1=on 0=off
+) 
+
+# load an environment bitmap
+floorplan
+(
+	name "empty"
+	bitmap "bitmaps/empty.png"
+	size [ 60.000 60.000 2.00 ]
+	pose [0 0 0 0]
+	ranger_return 1
+	obstacle_return 1
+	gui_nose 0
+)
+
+# set the resolution of the underlying raytrace model in meters
+resolution 0.02
+interval_sim 100  # simulation timestep in milliseconds
+
+#localization_origin [0 0 0 0]
+spider( name "robot0" localization "gps" pose [ -2 -0  0 0 ] )
+spider( name "robot1" localization "gps" pose [ -2 1  0 0] )
+spider( name "robot2" localization "gps" pose [ -1 -0 0 0] )
+spider( name "robot3" localization "gps" pose [ -1 1 0 0] )
+spider( name "robot4" localization "gps" pose [ 0  -0  0 0] )
+spider( name "robot5" localization "gps" pose [ 0  1  0 0] )
+spider( name "robot6" localization "gps" pose [ 1  -0  0 0] )
+spider( name "robot7" localization "gps" pose [ 1  1 0 0] )
+spider( name "robot8" localization "gps" pose [ 2  -0 0 0] )
+spider( name "robot9" localization "gps" pose [ 2  1 0 0] )

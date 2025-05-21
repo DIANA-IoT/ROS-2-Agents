@@ -1,0 +1,78 @@
+include "map.inc"
+include "spiderv4.inc"
+
+# size of the whole simulation
+# resolution 0.02
+
+# configure the GUI window	
+window
+(
+	size [ 6000.0 6000.0 ]
+	# 600/30 rounded up a bit
+	scale 5  
+  	rotate [ 0  0 ]	
+	center [ 0 0 ]
+	show_data 1              # 1=on 0=off
+) 
+
+# load an environment bitmap
+floorplan
+(
+	name "empty"
+	bitmap "bitmaps/empty.png"
+	size [ 150.000 150.000 2.00 ]
+	pose [0 0 0 0]
+	ranger_return 1
+	obstacle_return 1
+	gui_nose 0
+)
+
+# set the resolution of the underlying raytrace model in meters
+resolution 0.02
+interval_sim 100  # simulation timestep in milliseconds
+
+#localization_origin [0 0 0 0]
+spider( name "robot0" localization "gps" localization_origin [0 0 0 0] pose [ -16 -10 0 90 ] )
+spider( name "robot1" localization "gps" localization_origin [0 0 0 0] pose [ -12 -10 0 90] )
+spider( name "robot2" localization "gps" localization_origin [0 0 0 0] pose [ -8 -10 0 90] )
+spider( name "robot3" localization "gps" localization_origin [0 0 0 0] pose [ -4 -10 0 90] )
+spider( name "robot4" localization "gps" localization_origin [0 0 0 0] pose [ 0 -10 0 90] )
+spider( name "robot5" localization "gps" localization_origin [0 0 0 0] pose [ 4 -10 0 90] )
+spider( name "robot6" localization "gps" localization_origin [0 0 0 0] pose [ 8 -10 0 90] )
+spider( name "robot7" localization "gps" localization_origin [0 0 0 0] pose [ 12 -10 0 90] )
+spider( name "robot8" localization "gps" localization_origin [0 0 0 0] pose [ 16 -10 0 90] )
+spider( name "robot9" localization "gps" localization_origin [0 0 0 0] pose [ 20 -10 0 90] )
+
+spider( name "robot10" localization "gps" localization_origin [0 0 0 0] pose [ -16 -6 0 90] )
+spider( name "robot11" localization "gps" localization_origin [0 0 0 0] pose [ -12 -6 0 90] )
+spider( name "robot12" localization "gps" localization_origin [0 0 0 0] pose [ -8 -6 0 90] )
+spider( name "robot13" localization "gps" localization_origin [0 0 0 0] pose [ -4 -6 0 90] )
+spider( name "robot14" localization "gps" localization_origin [0 0 0 0] pose [ 0 -6 0 90] )
+spider( name "robot15" localization "gps" localization_origin [0 0 0 0] pose [ 4 -6 0 90] )
+spider( name "robot16" localization "gps" localization_origin [0 0 0 0] pose [ 8 -6 0 90] )
+spider( name "robot17" localization "gps" localization_origin [0 0 0 0] pose [ 12 -6 0 90] )
+spider( name "robot18" localization "gps" localization_origin [0 0 0 0] pose [ 16 -6 0 90] )
+spider( name "robot19" localization "gps" localization_origin [0 0 0 0] pose [ 20 -6 0 90] )
+
+spider( name "robot20" localization "gps" localization_origin [0 0 0 0] pose [ -16 -2 0 90] )
+spider( name "robot21" localization "gps" localization_origin [0 0 0 0] pose [ -12 -2 0 90] )
+spider( name "robot22" localization "gps" localization_origin [0 0 0 0] pose [ -8 -2 0 90] )
+spider( name "robot23" localization "gps" localization_origin [0 0 0 0] pose [ -4 -2 0 90] )
+spider( name "robot24" localization "gps" localization_origin [0 0 0 0] pose [ 0 -2 0 90] )
+spider( name "robot25" localization "gps" localization_origin [0 0 0 0] pose [ 4 -2 0 90] )
+spider( name "robot26" localization "gps" localization_origin [0 0 0 0] pose [ 8 -2 0 90] )
+spider( name "robot27" localization "gps" localization_origin [0 0 0 0] pose [ 12 -2 0 90] )
+spider( name "robot28" localization "gps" localization_origin [0 0 0 0] pose [ 16 -2 0 90] )
+spider( name "robot29" localization "gps" localization_origin [0 0 0 0] pose [ 20 -2 0 90] )
+
+spider( name "robot30" localization "gps" localization_origin [0 0 0 0] pose [ -16 2 0 90] )
+spider( name "robot31" localization "gps" localization_origin [0 0 0 0] pose [ -12 2 0 90] )
+spider( name "robot32" localization "gps" localization_origin [0 0 0 0] pose [ -8 2 0 90] )
+spider( name "robot33" localization "gps" localization_origin [0 0 0 0] pose [ -4 2 0 90] )
+spider( name "robot34" localization "gps" localization_origin [0 0 0 0] pose [ 0 2 0 90] )
+spider( name "robot35" localization "gps" localization_origin [0 0 0 0] pose [ 4 2 0 90] )
+spider( name "robot36" localization "gps" localization_origin [0 0 0 0] pose [ 8 2 0 90] )
+spider( name "robot37" localization "gps" localization_origin [0 0 0 0] pose [ 12 2 0 90] )
+spider( name "robot38" localization "gps" localization_origin [0 0 0 0] pose [ 16 2 0 90] )
+spider( name "robot39" localization "gps" localization_origin [0 0 0 0] pose [ 20 2 0 90] )
+

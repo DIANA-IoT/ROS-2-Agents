@@ -1,0 +1,22 @@
+controller5:
+  RobotController:
+      ros__parameters:
+          max_vel: 0.5
+          laser_min_range: 0.2
+          laser_max_range: 3.5
+          publish_tf: false
+          forces:
+              repulsion_sigma_robot: 800000000.0
+              repulsion_n_robot: 7.0
+              repulsion_sigma_object: 256.0
+              repulsion_n_object: 8.0
+              attraction_k1: 2.0
+              attraction_k2: 25.0
+              cohesion_alpha: 6.0
+          force_update_ms: 500
+          _movement_threshold: 1.0
+          controller_index: 5
+          robots_to_control: 10
+          total_robots: 100
+          use_sim_time: true
+          type: 'Agents'
